@@ -7,7 +7,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-image: url("IMG_7124.jpg"); /* Chemin de ton image */
+    background-image: url("IMG_7124.JPG"); /* Chemin de ton image */
     background-size: cover; /* L'image couvre tout l'écran */
     background-position: center; /* Centre l'image */
     background-repeat: no-repeat; /* Évite que l'image se répète */
