@@ -1,0 +1,143 @@
+/* Général */
+html {scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("IMG_7124.jpg"); /* Chemin de ton image */
+    background-size: cover; /* L'image couvre tout l'écran */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Évite que l'image se répète */
+    color: black; /* Texte en blanc pour contraste */
+}
+h1, h2 {
+    color: #0686ac;
+    text-align: center;
+}
+h3 {
+    color: #0686ac;
+    text-align: left
+}
+h4 {
+    color: #313332;
+    text-align: center;
+}
+/* Liens */
+a {
+    color: #0056b3;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+/* En-tête */
+header {
+    background-color: #a6d8ea;
+    color: black;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: black;
+    font-weight: bold;
+}
+/* Conteneur pour les cartes */
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* Les cartes s'ajustent automatiquement si l'espace est limité */
+    gap: 20px; /* Espacement entre les cartes */
+    justify-content: center; /* Centre les cartes horizontalement */
+    padding: 20px;
+    scroll-snap-type: x mandatory;
+}
+
+/* Style pour une carte individuelle */
+.card-container {
+    scroll-snap-align: center
+    display: flex;
+    flex-direction: column; /* Les cartes s'empilent verticalement */
+    gap: 20px; /* Espacement entre les cartes */
+    max-height: 400px; /* Hauteur fixe du conteneur */
+    overflow-y: scroll; /* Permet le défilement vertical */
+    padding: 10px;
+    border: 1px solid #ccc; /* Optionnel : bordure pour montrer le conteneur */
+    border-radius: 8px;
+    overflow-x
+    align-items: center;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Légère élévation au survol */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Image dans la carte */
+.card img {
+    width: 200px; /* S'adapte à la largeur de la carte */
+    height: 100px; /* Hauteur fixe pour uniformité */
+    object-fit: cover; /* Ajuste l'image sans la déformer */
+}
+
+/* Titre de la carte */
+.card h3 {
+    margin: 15px 0;
+    font-size: 1.5rem;
+}
+
+/* Description de la carte */
+.card p {
+    padding: 0 15px;
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Bouton dans la carte */
+.card .button {
+    display: inline-block;
+    margin: 15px 0;
+    padding: 10px 20px;
+    background-color: #0686ac;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    align: center #inutile
+}
+
+.card .button:hover {
+    background-color: #003d80;
+}
+
+
+/* Sections */
+section {
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* Pied de page */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
