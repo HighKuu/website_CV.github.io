@@ -6,27 +6,35 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-image: url("IMG_7124.jpg"); /* Chemin de ton image */
+    font-family: 'Poppins', sans-serif;
+    background-image: url("./IMG_7124.JPG"); /* Chemin de ton image */
     background-size: cover; /* L'image couvre tout l'écran */
     background-position: center; /* Centre l'image */
     background-repeat: no-repeat; /* Évite que l'image se répète */
     color: black; /* Texte en noir */
+
+
 }
 
 h1, h2 {
+    font-family: 'Poppins', sans-serif;
     color: #0686ac;
     text-align: center;
+    font-weight: 600;
 }
 
 h3 {
+    font-family: 'Poppins', sans-serif;
     color: #0686ac;
     text-align: left;
+    font-weight: 600;
 }
 
 h4 {
+    font-family: 'Poppins', sans-serif;
     color: #313332;
     text-align: center;
+    font-weight: 600;
 }
 
 /* Liens */
@@ -34,6 +42,11 @@ a {
     color: #0056b3;
     text-decoration: none;
 }
+
+a, .button {
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
 
 a:hover {
     text-decoration: underline;
@@ -52,15 +65,31 @@ nav ul {
     padding: 0;
     margin: 0;
 }
+/* Style pour les liens dans la navigation */
+nav ul li a {
+    color: #273746; /* Couleur du texte */
+    font-weight: bold; /* Gras pour les liens */
+    text-decoration: none; /* Pas de soulignement */
+    transition: transform 0.3s ease, color 0.3s ease; /* Transition pour un effet fluide */
+    display: inline-block; /* Important pour appliquer le scale correctement */
+}
+
+/* Effet de grossissement au survol */
+nav ul li a:hover {
+    transform: scale(1.2); /* Grossit légèrement (1.2 = 120%) */
+    color: #273746; /* Change la couleur au survol */
+}
 
 nav ul li {
     display: inline;
     margin: 0 15px;
+    color: black; /* Couleur du texte */
+    font-weight: bold; /* Gras pour les liens */
+    text-decoration: none; /* Pas de soulignement */
+    transition: transform 0.3s ease, color 0.3s ease; /* Transition pour un effet fluide */
 }
 
-nav ul li a {
-    color: black;
-    font-weight: bold;
+
 }
 
 /* Conteneur pour les cartes */
@@ -138,6 +167,33 @@ section {
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+}
+
+#section2 {
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: start;
+
+}
+#section3 {
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: start;
+
 }
 
 /* Pied de page */
@@ -147,4 +203,16 @@ footer {
     text-align: center;
     padding: 10px 0;
     margin-top: 20px;
+    border-top: 2px solid #0056b3;
+}
+
+@media (max-width: 768px) {
+    header, footer {
+        text-align: center;
+    }
+    section {
+        width: 95%;
+        margin: 10px auto;
+    }
+
 }
